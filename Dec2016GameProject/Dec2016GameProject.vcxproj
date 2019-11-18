@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7C01703C-3BCD-4120-A7DD-C0CFE09B74BD}</ProjectGuid>
+    <RootNamespace>Dec2016GameProject</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>E:\Google Drive\Cloud Source Code\Dec2016GameProject\SDL_mixer\include;E:\Google Drive\Cloud Source Code\Important-Open-Source-Code\open-source;E:\Google Drive\Cloud Source Code\Dec2016GameProject\Box2D;E:\Google Drive\Cloud Source Code\Dec2016GameProject\SDL_image\include;E:\Google Drive\Cloud Source Code\Dec2016GameProject\SDL\include;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\Google Drive\Cloud Source Code\Dec2016GameProject\SDL_mixer\lib\x86;E:\Google Drive\Cloud Source Code\Dec2016GameProject\Box2D\lib;E:\Google Drive\Cloud Source Code\Dec2016GameProject\SDL_image\lib\x86;E:\Google Drive\Cloud Source Code\Dec2016GameProject\SDL\lib\x86;$(LibraryPath)</LibraryPath>
+    <IntDir>$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)\SDL_mixer\include;E:\Google Drive\Cloud Source Code\Important-Open-Source-Code\open-source;$(SolutionDir)\SDL_image\include;$(SolutionDir)\SDL\include;$(SolutionDir)\Box2D\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;Box2D.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+      <AdditionalLibraryDirectories>$(SolutionDir)\SDL_mixer\lib\x86;$(SolutionDir)\SDL_image\lib\x86;$(SolutionDir)\SDL\lib\x86;$(SolutionDir)\Box2D\lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Background.cpp" />
+    <ClCompile Include="Bird.cpp" />
+    <ClCompile Include="Brick.cpp" />
+    <ClCompile Include="Bridge.cpp" />
+    <ClCompile Include="BridgeContainer.cpp" />
+    <ClCompile Include="BunnyEar.cpp" />
+    <ClCompile Include="BuoyancyController.cpp" />
+    <ClCompile Include="Bush.cpp" />
+    <ClCompile Include="Bushes.cpp" />
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Clock.cpp" />
+    <ClCompile Include="Cloud.cpp" />
+    <ClCompile Include="Destination.cpp" />
+    <ClCompile Include="Ecosystem.cpp" />
+    <ClCompile Include="Explosion.cpp" />
+    <ClCompile Include="FingerManager.cpp" />
+    <ClCompile Include="Fish.cpp" />
+    <ClCompile Include="FlockOfBird.cpp" />
+    <ClCompile Include="GameContactListener.cpp" />
+    <ClCompile Include="GameCursor.cpp" />
+    <ClCompile Include="GearKiller.cpp" />
+    <ClCompile Include="GearKillerContainer.cpp" />
+    <ClCompile Include="GearKillerMachine.cpp" />
+    <ClCompile Include="Ground.cpp" />
+    <ClCompile Include="Laser.cpp" />
+    <ClCompile Include="LaserContainer.cpp" />
+    <ClCompile Include="Layer.cpp" />
+    <ClCompile Include="LevelManager.cpp" />
+    <ClCompile Include="Lightning.cpp" />
+    <ClCompile Include="LightningKiller.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MainGameProject.cpp" />
+    <ClCompile Include="MainManager.cpp" />
+    <ClCompile Include="Map.cpp" />
+    <ClCompile Include="MenuManager.cpp" />
+    <ClCompile Include="Monster_Tomato.cpp" />
+    <ClCompile Include="Monster_Tomatoes.cpp" />
+    <ClCompile Include="Mountain.cpp" />
+    <ClCompile Include="MountainBrick.cpp" />
+    <ClCompile Include="Mover.cpp" />
+    <ClCompile Include="Particle.cpp" />
+    <ClCompile Include="ParticleExplosion.cpp" />
+    <ClCompile Include="ParticleSystem.cpp" />
+    <ClCompile Include="Path.cpp" />
+    <ClCompile Include="PauseScreen.cpp" />
+    <ClCompile Include="Perlin.cpp" />
+    <ClCompile Include="PerlinNoise.cpp" />
+    <ClCompile Include="Photon.cpp" />
+    <ClCompile Include="Pool.cpp" />
+    <ClCompile Include="PoolContainer.cpp" />
+    <ClCompile Include="Poster.cpp" />
+    <ClCompile Include="PowerPole.cpp" />
+    <ClCompile Include="PowerPoleContainer.cpp" />
+    <ClCompile Include="ReflectorContainer.cpp" />
+    <ClCompile Include="Relector.cpp" />
+    <ClCompile Include="SendMessage.cpp" />
+    <ClCompile Include="SettingScreen.cpp" />
+    <ClCompile Include="Shape.cpp" />
+    <ClCompile Include="Skin.cpp" />
+    <ClCompile Include="Sound.cpp" />
+    <ClCompile Include="SoundContainer.cpp" />
+    <ClCompile Include="SoundController.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="ThunderCloudValley.cpp" />
+    <ClCompile Include="TouchManager.cpp" />
+    <ClCompile Include="Trees.cpp" />
+    <ClCompile Include="ValleyContainer.cpp" />
+    <ClCompile Include="Vehicle.cpp" />
+    <ClCompile Include="Window.cpp" />
+    <ClCompile Include="YouWin.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Background.h" />
+    <ClInclude Include="Bird.h" />
+    <ClInclude Include="Brick.h" />
+    <ClInclude Include="Bridge.h" />
+    <ClInclude Include="BridgeContainer.h" />
+    <ClInclude Include="BunnyEar.h" />
+    <ClInclude Include="BuoyancyController.h" />
+    <ClInclude Include="Bush.h" />
+    <ClInclude Include="Bushes.h" />
+    <ClInclude Include="Button.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Clock.h" />
+    <ClInclude Include="Cloud.h" />
+    <ClInclude Include="Destination.h" />
+    <ClInclude Include="Ecosystem.h" />
+    <ClInclude Include="Explosion.h" />
+    <ClInclude Include="FingerManager.h" />
+    <ClInclude Include="Fish.h" />
+    <ClInclude Include="FlockOfBird.h" />
+    <ClInclude Include="GameContactListener.h" />
+    <ClInclude Include="GameCursor.h" />
+    <ClInclude Include="GameHeader.h" />
+    <ClInclude Include="GearKiller.h" />
+    <ClInclude Include="GearKillerContainer.h" />
+    <ClInclude Include="GearKillerMachine.h" />
+    <ClInclude Include="Ground.h" />
+    <ClInclude Include="Laser.h" />
+    <ClInclude Include="LaserContainer.h" />
+    <ClInclude Include="Layer.h" />
+    <ClInclude Include="LevelManager.h" />
+    <ClInclude Include="Lightning.h" />
+    <ClInclude Include="LightningKiller.h" />
+    <ClInclude Include="MainGameProject.h" />
+    <ClInclude Include="MainManager.h" />
+    <ClInclude Include="Map.h" />
+    <ClInclude Include="MenuManager.h" />
+    <ClInclude Include="Monster_Tomato.h" />
+    <ClInclude Include="Monster_Tomatoes.h" />
+    <ClInclude Include="Mountain.h" />
+    <ClInclude Include="MountainBrick.h" />
+    <ClInclude Include="Mover.h" />
+    <ClInclude Include="Particle.h" />
+    <ClInclude Include="ParticleExplosion.h" />
+    <ClInclude Include="ParticleSystem.h" />
+    <ClInclude Include="Path.h" />
+    <ClInclude Include="PauseScreen.h" />
+    <ClInclude Include="Perlin.h" />
+    <ClInclude Include="PerlinNoise.h" />
+    <ClInclude Include="Photon.h" />
+    <ClInclude Include="Pool.h" />
+    <ClInclude Include="PoolContainer.h" />
+    <ClInclude Include="Poster.h" />
+    <ClInclude Include="PowerPole.h" />
+    <ClInclude Include="PowerPoleContainer.h" />
+    <ClInclude Include="ReflectorContainer.h" />
+    <ClInclude Include="Relector.h" />
+    <ClInclude Include="SendMessage.h" />
+    <ClInclude Include="SettingScreen.h" />
+    <ClInclude Include="Shape.h" />
+    <ClInclude Include="Skin.h" />
+    <ClInclude Include="Sound.h" />
+    <ClInclude Include="SoundContainer.h" />
+    <ClInclude Include="SoundController.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="ThunderCloudValley.h" />
+    <ClInclude Include="TouchManager.h" />
+    <ClInclude Include="Trees.h" />
+    <ClInclude Include="ValleyContainer.h" />
+    <ClInclude Include="Vehicle.h" />
+    <ClInclude Include="Window.h" />
+    <ClInclude Include="YouWin.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="map.txt" />
+    <Text Include="map_2.txt" />
+    <Text Include="map_3.txt" />
+    <Text Include="map_4.txt" />
+    <Text Include="README.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

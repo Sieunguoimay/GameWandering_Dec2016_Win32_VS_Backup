@@ -1,0 +1,201 @@
+  01
+  016
+  01
+  01
+  01
+  01
+  01
+  01
+  01
+  01
+2001
+2001
+2001
+2001
+2001
+2001
+2001
+2001
+2001
+20015
+2001
+00013
+0001
+0001
+000001
+000001
+000001
+000001
+00000001 
+000000018
+00000001
+000001
+000001
+0012222221k
+0012222221
+00122222218
+0012222221
+0000122221
+0000122221k
+0000164
+000016
+00001         i
+000015
+00001
+00001
+
+
+
+
+00001
+00001       i
+0000001
+0000001
+0000001
+0000001
+001  0001
+0018 0001
+001
+0013
+001
+001
+001
+001
+001
+0014
+001
+001
+0014
+001
+0013
+001
+0017
+
+
+
+0001
+00016
+0001
+0001
+000001      i
+000001
+00001
+00001641
+00001  17
+000014
+00001    i
+000014   1  i
+00001    17
+
+
+222222222221
+222222222221
+
+
+          i
+000001222221
+000001222221
+00000001
+00000001
+00001
+000016
+000018
+000016
+00001
+00001
+0000001
+0000001
+000000001
+0000000014
+000000001
+0000000017
+000001
+000001
+0000015
+000001
+0000013
+000001
+000001
+000001
+000001
+000001 
+000001 1
+    
+
+         1k  i
+         1
+
+
+         1k
+         1
+
+
+         1k
+         1
+
+
+         1k
+         1i  
+
+
+0000000001
+0000000001
+0000000001n
+00000000017
+00000000000000000000
+00000000000000000000
+00000000000000000000
+00000000000000000000
+00000000000000000000
+00000000000000000000
+00000000000000000000
+00000000000000000000
+.//with this fucking dot here
+//now we free to write anything bellow =]]
+
+
+
+
+-----------LET'S EXPLAIN SOME ABOVE DIGITS-------------------
+0 - underground brick
+1 - surface with grass brick
+2 - underground brick 2
+
+3 - bush
+4 - bamboo
+5 - rock
+6 - grass 
+7 - tree
+
+8 - monster tomato
+9 - laser
+a - mirror - reflector left - up
+b - mirror - reflector left - down
+c - mirror - reflector right - up
+d - mirror - reflector right - down
+e - power pole
+///////////////////////////////////
+//////////////////////////////////
+these following map must be put in the distance in the rule by which:
+
+two continue bridges (or other things) must have distance from the FIRST END to the SECOND BEGIN //greater// than the maximum
+indices to be displayed in map.
+or else
+two continue bridges (or other things) must have distance from the FIRST END to the SECOND BEGIN //smaller// than the maximum
+indices to be displayed in map.
+
+
+///new define
+f - bridge mark 
+g - pool without wood mark
+h - pool with wood mark
+i - white cloud valley
+j - dark cloud valley
+
+
+k - single gear killer
+l - 2 gear killer
+m - 3 gear killer
+
+n - destination
+-----------------------------------------------------------------------------------------------------------------------------
